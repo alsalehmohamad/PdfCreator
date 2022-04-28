@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PdfCreator": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\Alsaleh\\Desktop\\Aufgabe\\LkqMesseAnmeldungOmarMohamad\\LkqMesseAnmeldungOmarMohamad\\Cronjob\\PdfCreator"
+    }
+  }
+}

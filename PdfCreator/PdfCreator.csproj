@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BarCode" Version="2022.3.0" />
+    <PackageReference Include="ceTe.DynamicPDF.CoreSuite.NET" Version="10.35.0" />
+    <PackageReference Include="HtmlRenderer.PdfSharp" Version="1.5.1-beta1" />
+    <PackageReference Include="IronPdf" Version="2022.4.5575" />
+    <PackageReference Include="OpenHtmlToPdf" Version="1.12.0" />
+    <PackageReference Include="PdfSharp" Version="1.50.5147" />
+    <PackageReference Include="Spire.PDF" Version="8.4.15" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Services\Services.csproj" />
+    <ProjectReference Include="..\..\Types\Types.csproj" />
+    <ProjectReference Include="..\..\SimpleTypes\SimpleTypes.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="HTML\HTMLPage.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="QrCodePdf\" />
+    <Folder Include="QrCode\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
